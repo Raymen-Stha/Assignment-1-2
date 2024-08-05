@@ -7,4 +7,4 @@ Tools and Justification
 
 •	Git: Essential for effective version control and collaboration among team members, allowing for tracking changes and managing the codebase efficiently.
 
-•	Turnitin: Used for plagiarism checking to ensure the originality of the content and maintain academic integrity.
+

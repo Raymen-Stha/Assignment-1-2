@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #CAF0F8;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0077B6;
+    padding: 10px 20px;
+  }
+  
+  .logo img {
+    max-width: 150px;
+    height: auto;
+    
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    font-size: large;
+  }
+  
+  li {
+    margin: 0 20px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  
+  
+  .profile {
+    margin-left: auto;
+  }
+  
+  .profile img {
+    width: 40px;  
+    height: 40px; 
+    border-radius: 50%;
+  }
+  
+
+.pet-list {
+    text-align: center;
+    padding: 40px;
+}
+
+.pet-card {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    display: inline-block;
+}
+
+.pet-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0px;
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    position: absolute;  
+    bottom: 0;
+  }
+  

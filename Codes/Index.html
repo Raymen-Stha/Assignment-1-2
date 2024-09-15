@@ -3,67 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pet Adoption Center</title>
+    <title>FurryFriends - Pet Adoption</title>
     <link rel="stylesheet" href="Home.css">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
-        <div class="logo">
-            <img src="C:\wamp64\www\Assignment1-2\Logo\Designer-removebg.png" alt="Furry Friends Logo">
-        </div>
-        <div class="logotext">
-                        <img src="C:\wamp64\www\Assignment1-2\Logo\logo text.png" alt="logo Text">
-        </div>
-    
+        <div class="nav-list">
         <nav>
             <ul>
                 <li><a href="Index.html">Home</a></li>
-                <li><a href="Available.html">Available Pet</a></li>
-                <li><a href="Register.html">Adopt</a></li>
-                <li><a href="About Us.html">About Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="About Us.html">About</a></li>
+                <li><a href="Available.html">Adopt</a></li>
+                <li><a href="Registerpet.html">Register Pet</a></li>
             </ul>
-            <div class="profile">
-                <a href="Profile.html">
-                    <img src="file:///C:/wamp64/www/Assignment1-2/Icons/Action/account_circle.svg" alt="Profile Image">
-                </a>
-            </div>
-            
+        </div>
+        <div class="nav-right">
+            <button class="login-btn">Login/Register</button>
+        </div>
+           
         </nav>
     </header>
 
-        
-    
-  
-        <section class="hero">
-            <h1>Welcome to Pet Adoption Center</h1>
-            <h7>Your new best friend is waiting for you!</h7>
-        </section>
-        
-        <section class="featured-pets">
-            <h2>Featured Pets</h2>
-            <div class="pet-grid">
-                <div class="pet-card">
-                    <img src="pet-placeholder1.jpg" alt="Pet 1">
-                    <h3>Pet Name 1</h3>
-                    <p>Breed | Age | Gender</p>
-                </div>
-                <div class="pet-card">
-                    <img src="pet-placeholder2.jpg" alt="Pet 2">
-                    <h3>Pet Name 2</h3>
-                    <p>Breed | Age | Gender</p>
-                </div>
-                <div class="pet-card">
-                    <img src="pet-placeholder3.jpg" alt="Pet 3">
-                    <h3>Pet Name 3</h3>
-                    <p>Breed | Age | Gender</p>
-                </div>
-            </div>
-        </section>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Give a New Life to Furry Friends</h1>
+        <p>Pet adoption is an incredible way to bring joy into your life and the life of an animal in need.</p>
+        <div class="hero-buttons">
+            <button class="adopt-btn">Adopt Now</button>
+            <button class="donate-btn">Donate</button>
+        </div>
+        <img src="hero-image.png" alt="Happy Pets" class="hero-image">
+    </section>
 
-    
+    <!-- Pet Listings Section -->
+    <section class="pet-listings">
+        <h2>Take a Look at Some of Our Pets</h2>
+        <div class="pets">
+            <div class="pet-card">
+                <img src="pet1.jpg" alt="Pet 1">
+                <h3>Oliver</h3>
+                <p>Breed: Golden Retriever</p>
+                <button class="adopt-btn">Adopt</button>
+            </div>
+            <div class="pet-card">
+                <img src="pet2.jpg" alt="Pet 2">
+                <h3>Milo</h3>
+                <p>Breed: Beagle</p>
+                <button class="adopt-btn">Adopt</button>
+            </div>
+            <div class="pet-card">
+                <img src="pet3.jpg" alt="Pet 3">
+                <h3>Maple</h3>
+                <p>Breed: Persian Cat</p>
+                <button class="adopt-btn">Adopt</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Adoption Process Section -->
+    <section class="adoption-process">
+        <h2>Adopt or Rehome a Pet in Just 3 Easy Steps</h2>
+        <div class="steps">
+            <div class="step">
+                <h3>Step 1</h3>
+                <p>Fill out the adoption/rehome form.</p>
+            </div>
+            <div class="step">
+                <h3>Step 2</h3>
+                <p>Meet your pet and complete the paperwork.</p>
+            </div>
+            <div class="step">
+                <h3>Step 3</h3>
+                <p>Take your pet home!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pet News Section -->
+    <section class="pet-news">
+        <h2>Pet News</h2>
+        <div class="news-cards">
+            <div class="news-card">
+                <img src="dog-biscuits.jpg" alt="Dog Biscuits">
+                <h3>Dog Biscuits</h3>
+                <p>Learn how to make homemade treats.</p>
+            </div>
+            <div class="news-card">
+                <img src="training.jpg" alt="Training">
+                <h3>Training Cats</h3>
+                <p>Essential tips for training your cat.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Pet Adoption Center. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-links">
+                <h4>How Can We Help?</h4>
+                <ul>
+                    <li><a href="#">Adopt a Pet</a></li>
+                    <li><a href="#">Pet Care Tips</a></li>
+                </ul>
+            </div>
+            <div class="contact-info">
+                <h4>Contact Us</h4>
+                <p>Email: FurryFriends@gmail.com</p>
+                <p>123 Pet Street, AnyTown, USA</p>
+            </div>
+            <div class="newsletter">
+                <h4>Keep in Touch</h4>
+                <input type="email" placeholder="Enter your email">
+                <button>Subscribe</button>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  padding: 1rem;
+  padding: 20px;
   display: flex;
   align-content: center;
   justify-content: space-around;

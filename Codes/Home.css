@@ -57,19 +57,29 @@ nav a {
   cursor: pointer;
 }
 
+/* Hero Section Styling */
 .hero {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   padding: 2rem;
   background-color: #EAF2F8;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 40%;
 }
 
 .hero h1 {
+  color: #4A4E69; /* Dark grayish-blue */
   font-size: 2.5rem;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
+  color: #626262; /* Dark gray */
 }
 
 .hero-buttons button {
@@ -78,20 +88,57 @@ nav a {
   cursor: pointer;
   border: none;
   border-radius: 5px;
+  color: white;
+  background-color: #6C63FF; /* Bright purple */
+  transition: background-color 0.3s ease;
+}
+
+.hero-buttons button:hover {
+  background-color: #5754d4; /* Darker purple */
 }
 
 .adopt-btn {
-  background-color: #FFD700;
+  background-color: #4CAF50; /* Green */
 }
 
-.donate-btn {
-  background-color: #FF6347;
-  color: white;
+.rehome-btn {
+  background-color: #2196F3; /* Blue */
+}
+
+.hero-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+
+.hero-image::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: #CAB8FF; /* Light purple */
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.hero-image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .pet-listings {
   padding: 2rem;
   background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+}
+
+.pets{
+  display: flex;
+  gap: 30px;
 }
 
 .pet-card {
@@ -101,6 +148,7 @@ nav a {
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 2rem;
+  
 }
 
 .pet-card img {

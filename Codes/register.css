@@ -1,58 +1,110 @@
-/* Global Styles */
+/* Basic page styling */
 body {
   font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-header {
-  padding: 1rem;
+.content {
+  padding: 20px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Modal styles */
+.modal {
+  display: none; /* Initially hidden */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  display: flex; /* Use flexbox for layout */
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 0; /* Remove padding to let flexbox manage it */
+  max-width: 35%; /* Adjust width to fit better */
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+}
+
+/* Flexbox styles */
+.modal-body {
   display: flex;
-  align-content: center;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #5C67F2
+  align-items: stretch; /* Makes the image and form align to the full height */
 }
 
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative; /* This is for centering the UL */
-  ;
-}
-.nav-list {
-  display: flex;
-  flex-grow: 1;
-  justify-content: space-around;
-}
-nav ul {
-  list-style: none; 
-  display: flex; 
-  gap: 30px;
-  margin: 0;
-  padding: 0;
-  justify-content: center; 
-  align-items: center; 
-
-}
-nav ul li {
-  font-size: x-large;
+/* Form styling */
+.form-container {
+  width: 50%; /* Each takes half of the modal */
+  padding: 20px; /* Add some padding around the form */
 }
 
-nav a {
-  text-decoration: none;
-  color: #333;
+.image-container {
+  width: 50%; /* Each takes half of the modal */
+  overflow: hidden; /* Prevents overflow if the image doesn't fit */
 }
 
-.nav-right {
-  margin-left: auto;
+.image-container img {
+  width: 100%; /* Image takes full width of container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensures the image covers the entire container */
 }
-.login-btn {
-  background-color: #5C67F2;
+
+/* Blur effect */
+.blur {
+  filter: blur(5px);
+}
+
+/* Input and button styling */
+form input {
+  display: block;
+  width: 90%;
+  padding: 10px;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #5cb85c;
   color: white;
   border: none;
-  padding: 0.5rem 1rem;
+  border-radius: 4px;
   cursor: pointer;
+}
+
+form button:hover {
+  background-color: #4cae4c;
+}
+
+p {
+  font-size: 14px;
 }

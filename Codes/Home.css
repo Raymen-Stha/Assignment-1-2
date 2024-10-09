@@ -1,60 +1,6 @@
-/* Global Styles */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-header {
-  padding: 1rem;
-  display: flex;
-  align-content: center;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #5C67F2
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative; /* This is for centering the UL */
-  ;
-}
-.nav-list {
-  display: flex;
-  flex-grow: 1;
-  justify-content: space-around;
-}
-nav ul {
-  list-style: none; 
-  display: flex; 
-  gap: 20px;
-  margin: 0;
-  padding: 0;
-  justify-content: center; 
-  align-items: center; 
-
-}
-nav ul li {
-  font-size: x-large;
-}
-
-nav a {
-  text-decoration: none;
-  color: #333;
-}
-
-.nav-right {
-  margin-left: auto;
-}
-.login-btn {
-  background-color: #5C67F2;
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
 }
 
 /* Hero Section Styling */
@@ -90,19 +36,6 @@ nav a {
   border-radius: 5px;
   color: white;
   background-color: #6C63FF; /* Bright purple */
-  transition: background-color 0.3s ease;
-}
-
-.hero-buttons button:hover {
-  background-color: #5754d4; /* Darker purple */
-}
-
-.adopt-btn {
-  background-color: #4CAF50; /* Green */
-}
-
-.rehome-btn {
-  background-color: #2196F3; /* Blue */
 }
 
 .hero-image {
@@ -129,40 +62,98 @@ nav a {
   height: auto;
 }
 
-.pet-listings {
+.pet-listings{
   padding: 2rem;
   background-color: #f9f9f9;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  flex-direction: row;
 }
 
-.pets{
-  display: flex;
-  gap: 30px;
-}
+h2{
+  margin: 1 0px 0 0 30px;
+ }
+
 
 .pet-card {
-  background-color: white;
-  border-radius: 10px;
-  padding: 1rem;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    margin-right: 35px;
+
+}
+
+
+.pet-card img {
+  width: 200px; /* Set your desired width */
+  height: 200px; /* Set the same height to create a square */
+  object-fit: cover; /* This will crop the image to fill the square */
+  border-radius: 8px;
+
+}
+
+.pet-card h4 {
+  color: #0A453A;
+  font-size: 1rem;
+}
+.location{
+    display: flex;
+    flex-direction: row;
+    /* align-content: center; */
+    justify-content: center;
+    align-items: center;
+}
+
+.location img{
+  max-width: 20px;
+  max-height: 20px;
+}
+.pet_info{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  gap: 5.5px;
+}
+.pet_info_box{
+  background-color: rgba(234, 232, 247, 1);
+  padding: 10px;
+  border-radius: 20px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 2rem;
-  
+  color: #2E256F;
+  font-weight: bold;
+  font-size: x-small;
+  width: 85px;
 }
 
-.pet-card img {
-  max-width: 100%;
-  border-radius: 10px;
+.adopt-btn {
+  margin: 0 1rem;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #6C63FF; /* Bright purple */
 }
+
 
 /* Adoption Process Section */
 .adoption-process {
   text-align: center;
-  background-color: #FFF1E6;
+  background-color: #EAF2F8;
   padding: 2rem;
 }
 
+.adoption-process h4 {
+  color: #0A453A
+}
 .adoption-process .steps {
   display: flex;
   justify-content: center;
@@ -174,25 +165,5 @@ nav a {
   border-radius: 10px;
   padding: 1.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Footer Section */
-footer {
-  background-color: #5C67F2;
-  color: white;
-  padding: 2rem;
-}
-
-footer ul {
-  list-style: none;
-  padding: 0;
-}
-
-footer ul li {
-  margin: 0.5rem 0;
-}
-
-footer .newsletter input {
-  padding: 0.5rem;
-  margin-right: 0.5rem;
+  width: 20%;
 }

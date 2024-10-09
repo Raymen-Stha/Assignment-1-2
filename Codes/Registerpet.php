@@ -7,10 +7,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href=".css">
+   <link rel="stylesheet" href="registerpet.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <?php
-   include "Header.php"
-   ?>
+        <!-- Header Section -->
+        <?php
+        include "Header.php"
+        ?>
+</body>     

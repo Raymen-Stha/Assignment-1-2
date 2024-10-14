@@ -24,21 +24,25 @@ closeModal.onclick = function() {
 // Switch to Login form
 switchToLogin.onclick = function(e) {
     e.preventDefault();
-    createAccountForm.style.display = 'none'; // Hide the create account form
-    loginForm.style.display = 'block'; // Show the login form
+    document.querySelector(".modal-register").classList.add("registerHidden");
+    document.querySelector(".modal-login").classList.remove("registerHidden");
+    //jQuery(".modal-register").addClass("registerHidden");
+    //jQuery('.modal-login').removeClass("registerHidden");
+    //createAccountForm.style.display = 'none'; // Hide the create account form
+    //loginForm.style.display = 'block'; // Show the login form
 }
 
 // Switch to Create Account form
 switchToCreateAccount.onclick = function(e) {
     e.preventDefault();
-    loginForm.style.display = 'none'; // Hide the login form
-    createAccountForm.style.display = 'block'; // Show the create account form
+    document.querySelector(".modal-login").classList.add("registerHidden");
+    document.querySelector(".modal-register").classList.remove("registerHidden");
 }
 
 // Close modal when clicking outside of it
-window.onclick = function(event) {
+/*window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = 'none'; // Hide modal
         content.classList.remove('blur'); // Remove blur effect
     }
-}
+} */

@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero Section Styling */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem;
+  background-color: #EAF2F8;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 40%;
+}
+
+.hero h1 {
+  color: #4A4E69; /* Dark grayish-blue */
+  font-size: 2.5rem;
+}
+
+
+.sub {
+  color: #4A4E69; /* Match with hero heading color */
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem; /* Added margin for spacing */
+}
+
+.button {
+  margin: 0 1rem;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #6C63FF; /* Bright purple */
+  transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+.hero-buttons button:hover {
+  background-color: #5A54D5; /* Darker purple on hover */
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.success-message{
+    color: #4A4E69; 
+    font-size: 2rem;
+    text-align: center;
+}
+.error-message {
+    color: #4A4E69; 
+    font-size: 2rem;
+    text-align: center;
+}

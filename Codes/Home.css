@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero Section Styling */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem;
+  background-color: #EAF2F8;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 40%;
+}
+
+.hero h1 {
+  color: #4A4E69; /* Dark grayish-blue */
+  font-size: 2.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #626262; /* Dark gray */
+}
+
+.hero-buttons button {
+  margin: 0 1rem;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #6C63FF; /* Bright purple */
+}
+
+.hero-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+
+.hero-image::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: #CAB8FF; /* Light purple */
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.hero-image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.pet-listings{
+  padding: 2rem;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: flex-start;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+h2{
+  margin: 1 0px 0 0 30px;
+ }
+
+
+.pet-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    margin-right: 35px;
+
+}
+
+
+.pet-card img {
+  width: 200px; /* Set your desired width */
+  height: 200px; /* Set the same height to create a square */
+  object-fit: cover; /* This will crop the image to fill the square */
+  border-radius: 8px;
+
+}
+
+.pet-card h4 {
+  color: #0A453A;
+  font-size: 1rem;
+}
+.location{
+    display: flex;
+    flex-direction: row;
+    /* align-content: center; */
+    justify-content: center;
+    align-items: center;
+}
+
+.location img{
+  max-width: 20px;
+  max-height: 20px;
+}
+.pet_info{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  gap: 5.5px;
+}
+.pet_info_box{
+  background-color: rgba(234, 232, 247, 1);
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  color: #2E256F;
+  font-weight: bold;
+  font-size: x-small;
+  width: 85px;
+}
+
+.adopt-btn {
+  margin: 0 1rem;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #6C63FF; /* Bright purple */
+}
+
+
+/* Adoption Process Section */
+.adoption-process {
+  text-align: center;
+  background-color: #EAF2F8;
+  padding: 2rem;
+}
+
+.adoption-process h4 {
+  color: #0A453A
+}
+.adoption-process .steps {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.adoption-process .step {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 20%;
+}

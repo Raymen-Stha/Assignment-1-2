@@ -1,0 +1,16 @@
+Project Scope
+Functional Requirements:
+
+Account Registration and Login: New users should be able to sign up for new accounts, as well as log into their existing account\App Features
+
+Harmonized Animal Health Reports: Using blockchain technology to digitize animal health reports while connecting shelters, rescue organizations and breeders with readily accessible 
+information like an age of the pet or within one mile where it was last seen.
+Viewing Available Pets: A list of all pets that can be searched on, by the following criteria: breed, age Users tap through once to see more details.
+Adopting a Pet: After Users can begin the adoption process by interacting with Adoption slide and either showing interest in for adopting a pet, or submitting an adoption request.
+Contact: There will be a contact form where users can ask us to give further assistance.
+
+Non-Functional Requirements:
+
+Security: The platform should be secure, protecting user data and prevent unauthorized access.
+Usability: Interface: Should be well-arranged, easy to navigate and user-friendly.
+Performance: The system should be performant and able to process large amounts of data with multiple users.

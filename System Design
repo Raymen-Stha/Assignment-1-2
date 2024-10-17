@@ -1,17 +1,1 @@
-System Design
 
-Database Schema:
-•	The database schema will include several tables to store information about pets, users, and adoptions:
-•	Pets Table: Contains fields like id, name, age, breed, description, and image_path.
-•	Users Table: Contains fields like id, username, password, and email.
-•	Adoptions Table: Contains fields like id, user_id, pet_id, and adoption_date.
-
-Web Pages
-•	Home (index.html): The main landing page with an overview of the platform.
-•	About (about.html): Information about the platform, its mission, and its team.
-•	Available Pets (pets.html): A searchable and filterable list of pets available for adoption.
-•	Register Pet (register_pet.html): A form for shelters and breeders to register new pets.
-•	Adopt Pet (adopt_pet.html): Information and steps to start the adoption process.
-•	Contact Us (contact.html): A form for users to reach out with inquiries or support requests.
-•	Pet Details (pet_details.html): Detailed information about a specific pet.
-•	User Registration (register_user.html): A form for new users to create an account.

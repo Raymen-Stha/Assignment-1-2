@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+
 }
 
 /* Hero Section Styling */
@@ -11,6 +12,7 @@ body {
   padding: 2rem;
   background-color: #EAF2F8;
   position: relative;
+  min-height: 100vh;
 }
 
 .hero-content {

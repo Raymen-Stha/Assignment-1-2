@@ -68,18 +68,18 @@
             <div class="step">
                 <h3>Step 1</h3>
                 <img src="Logo\steps\step1.svg">
-                <p>Set up your profile (including photos) in minutes</p>
+                <p>Look around for pets you want to adopt</p>
             </div>
             
             <div class="step">
                 <h3>Step 2</h3>
-                <img src="Logo\steps\step2.svg">
-                <p>Describe your home and routine so rehomers can see if its right for their pet</p>
+                <img src="Logo\steps\step3.svg">
+                <p>Fill the form  after clicking on adopt on any of the pets</p>
             </div>
             <div class="step">
                 <h3>Step 3</h3>
-                <img src="Logo\steps\step3.svg">
-                <p>Start your search!</p>
+                <img src="Logo\steps\step2.svg">
+                <p>Wait for Us to veryfy and send you and conformation email</p>
             </div>
         </div>
     </section>

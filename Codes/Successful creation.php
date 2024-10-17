@@ -29,7 +29,7 @@
             <p class="sub">Pet adoption and rehoming are both vital aspects of animal welfare, offering hope and a fresh start to pets in need. Open your heart and your home to a shelter pet.</p>
             <div class="hero-buttons">
                 <a href="available.php"><button class="button">Adopt Now</button></a>
-                <a href="about.php"><button class="button">About Us</button></a>
+                <a href="About Us.php"><button class="button">About Us</button></a>
             </div>
         </div>
     </section>

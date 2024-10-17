@@ -14,48 +14,42 @@
                 <?php
                 include "Header.php"
                 ?>
-        </body>
-        <div id="contact">
-                <div class="container">
-                <h1 class="subtitle">Contact US📱</h1>
-                <form>
-                        <div class="input-group">
-                        <label>Full Name</label>
-                        <input id="contact-name" onkeyup="validateName()" type="text" placeholder="Enter your name">
-                        <span id="name-error"></span>
-                        </div>
 
-                        <div class="input-group">
-                        <label>Phone No.</label>
-                        <div class="phone-input">
-                                <input id="contact-country-code" type="text" placeholder="+XX" maxlength="4">
-                                <input id="contact-phone" onkeyup="validatePhone()" type="tel" placeholder="123 456 7890">
-                        </div>
-                        <span id="phone-error"></span>
-                        </div>
-                        
+                                <div class="contact-container">
+                                <div class="contact-info">
+                                        <h2>Contact Us</h2>
+                                        <p>Get in touch with our team by choosing what kind of our services you are looking for.</p>
+                                        <img src="pets/contact.jpg" alt="Pet Adoption" class="contact-image">
+                                        <div class="contact-details">
+                                        <h3><i class="location"></i> 📌  123 Main Street, Anytown, USA</h3>
+                                        <h3><i class="phone"></i> 📞  +1 (555) 123-4567</h3>
+                                        <h3><i class="email"></i>📬   FurryFriendsSupport@gmail.com</h3>
+                                        </div>
+                                </div>
+                                <div class="contact-form">
+                                        <h3>Ready to help you</h3>
+                                        <form action="connections/contact.php" method="post">
+                                        <div class="input-container">
+                                                <input type="text" name="name" placeholder="Your Name" required>
+                                        </div>
+                                        <div class="input-container">
+                                                <input type="email" name="email" placeholder="Your E-mail address" required>
+                                        </div>
+                                        <div class="input-container">
+                                                <input type="tel" name="phone" placeholder="+61 XXXXXXXXX" required>
+                                        </div>
+                                        <div class="input-container">
+                                                <textarea name="message" placeholder="Tell us about your request" required></textarea>
+                                        </div>
+                                        <button type="submit">Send</button>
+                                        </form>
+                                </div>
+                                </div>
 
-                        <div class="input-group">
-                        <label>Email Id</label>
-                        <input id="contact-email" onkeyup="validateEmail()" type="email" placeholder="Enter Email">
-                        <span id="email-error"></span>
-                        </div>
 
-                        <div class="input-group">
-                        <label>Your Message</label>
-                        <textarea id="contact-message" onkeyup="validateMessage()" rows="5"
-                                placeholder="Enter your message"></textarea>
-                        <span id="message-error"></span>
-                        </div>
+        <!-- footer Section -->
+        <?php
+                include "footer.php"
+        ?>
 
-                        <button onclick="return validateForm()">Submit</button>
-                        <span id="submit-error"></span>
-
-                </form>
-                </div>
-        </div>
-        </body>
-
-        <!-- script file connection -->
-        <script src="JSS.js"></script>
 </html>   

@@ -6,9 +6,6 @@
             <h4>How Can We Help?</h4>
             <ul>
                 <li><a href="available.php">Adopt a pet</a></li>
-                <li><a href="#">Rehome a pet</a></li>
-                <li><a href="#">Adopt FAQ's</a></li>
-                <li><a href="#">Rehome FAQ's</a></li>
             </ul>
         </div>
 
@@ -16,16 +13,14 @@
             <h4>Contact Us</h4>
             <p>📍 123 Pet Street , Anytown, Australia</p>
             <p>📞 +61 04 XXXXXXXX</p>
-            <p>📧 <a href="mailto:FurryFriendsSupport@gmail.com">FurryFriendsSupport@gmail.com</a></p>
+
         </div>
 
         <div class="footer-section">
             <h4>Keep In Touch With Us</h4>
             <p>Join the FurryFriends magazine and be first to hear about news</p>
-                <form  action="#">
-                    <input type="email" placeholder="E-mail Address">
-                    <button type="submit">Subscribe</button>
-                </form>
+            <p>📧 <a href="mailto:FurryFriendsSupport@gmail.com">FurryFriendsSupport@gmail.com</a></p>
+
         </div>
     </div>
 

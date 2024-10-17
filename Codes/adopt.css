@@ -34,7 +34,7 @@ h1, h2 {
 
 label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 input[type="text"],
@@ -79,4 +79,11 @@ button:hover {
 
 .pet-details p {
     margin: 5px 0; /* Space between lines */
+}
+
+.form-group{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    align-items: baseline;
 }

@@ -1,6 +1,6 @@
 <?php
 session_start();
-require 'connections/db.php'; // Your database connection file
+require 'db.php'; // Your database connection file
 
 if (isset($_POST['register'])) {
     $fullName = $_POST['fullName'];

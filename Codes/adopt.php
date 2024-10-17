@@ -76,11 +76,14 @@
 
                 <h2>Home Situation</h2>
                 <label>Do you have a garden?</label>
+            <div class="form-group">                
                 <input type="radio" id="garden_yes" name="garden" value="yes" required>
                 <label for="garden_yes">Yes</label>
+            </div>
+            <div class="form-group">                
                 <input type="radio" id="garden_no" name="garden" value="no">
                 <label for="garden_no">No</label>
-
+            </div>
                 <label for="members">Number of members:</label>
                 <input type="number" id="members" name="members" required>
 
@@ -109,10 +112,14 @@
                 </div>
 
                 <label for="allergies">Anyone in the household allergic to pets?</label>
-                <input type="radio" id="allergy_yes" name="allergies" value="yes" required>
-                <label for="allergy_yes">Yes</label>
-                <input type="radio" id="allergy_no" name="allergies" value="no">
-                <label for="allergy_no">No</label>
+                <div class="form-group">
+                    <input type="radio" id="allergy_yes" name="allergies" value="yes" required>
+                    <label for="allergy_yes">Yes</label>
+                </div>
+                <div class="form-group">
+                    <input type="radio" id="allergy_no" name="allergies" value="no">
+                    <label for="allergy_no">No</label>
+                </div>
 
                 <h2>Review Your Information</h2>
                 <div class="submit">

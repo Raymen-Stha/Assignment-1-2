@@ -2,7 +2,7 @@ Technology Stack
 Frontend:
 •	HTML5: Used for the structure and content of the web pages.
 •	CSS3: Used for styling the web pages and making them visually appealing.
-•	JavaScript: Used for adding interactivity and enhancing the user experience.
+•	JavaScript: Used for adding function to hide and unhide.
 Backend:
 •	PHP: Used for server-side scripting, handling form submissions, and interacting with the database.
 Database:

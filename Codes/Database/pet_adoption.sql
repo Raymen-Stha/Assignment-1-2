@@ -24,6 +24,71 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `adoption_applications`
+--
+
+DROP TABLE IF EXISTS `adoption_applications`;
+CREATE TABLE IF NOT EXISTS `adoption_applications` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `pet_id` int NOT NULL,
+  `first_name` varchar(100) NOT NULL,
+  `last_name` varchar(100) NOT NULL,
+  `phone` varchar(15) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `street_name` varchar(255) NOT NULL,
+  `postcode` varchar(10) NOT NULL,
+  `town` varchar(100) NOT NULL,
+  `garden` enum('yes','no') NOT NULL,
+  `members` int NOT NULL,
+  `children` int NOT NULL,
+  `youngest_child_age` int NOT NULL,
+  `other_animals` enum('yes','no') NOT NULL,
+  `animal_type` varchar(50) DEFAULT NULL,
+  `animal_breed` varchar(100) DEFAULT NULL,
+  `allergies` enum('yes','no') NOT NULL,
+  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  KEY `pet_id` (`pet_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `adoption_applications`
+--
+
+INSERT INTO `adoption_applications` (`id`, `pet_id`, `first_name`, `last_name`, `phone`, `email`, `street_name`, `postcode`, `town`, `garden`, `members`, `children`, `youngest_child_age`, `other_animals`, `animal_type`, `animal_breed`, `allergies`, `created_at`) VALUES
+(1, 1, 'Sujal ', 'Shrestha', '321083780', 'sujal07shr@gmail.com', '1/132 Totterdell Street', '2617', 'Belconnen', 'yes', 3, 1, 1, 'no', 'dog', '', 'yes', '2024-10-16 10:03:50'),
+(4, 2, 'Sujal ', 'Shrestha', '0475970665', 'sujal07shr@gmail.com', '1/132 Totterdell Street', 'fgdfgd', '32432365454', 'yes', 11, 111, 11, 'no', 'cat', '1234567', 'no', '2024-10-16 12:15:23');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `contact`
+--
+
+DROP TABLE IF EXISTS `contact`;
+CREATE TABLE IF NOT EXISTS `contact` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `full_name` varchar(100) NOT NULL,
+  `phone_code` varchar(5) NOT NULL,
+  `phone` varchar(15) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `message` text NOT NULL,
+  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `contact`
+--
+
+INSERT INTO `contact` (`id`, `full_name`, `phone_code`, `phone`, `email`, `message`, `created_at`) VALUES
+(1, 'Sujal SHrestha', '61', '0475970665', 'sujal07shr@gmail.com', 'i am happy', '2024-10-16 11:37:01'),
+(2, 'Sujal Shrestha', '', '0475970665', 'sujal07shr@gmail.com', 'i am happy', '2024-10-16 12:33:49'),
+(3, 'Sujal Shrestha', '', '0475970665', 'sujal07shr@gmail.com', 'i am happy', '2024-10-16 12:35:27');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `pets`
 --
 
